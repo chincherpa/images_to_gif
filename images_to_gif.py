@@ -8,10 +8,10 @@ import imageio
 
 from progressbar import Bar, Percentage, ProgressBar
 
-duration = 0.1
-paths = [r'A:\fotos\1',
-         r'A:\fotos\2',
-         r'A:\fotos\3',
+duration = 0.6
+paths = [r'D:\OneDrive\_gits\images_to_gif\images',
+        #  r'A:\fotos\2',
+        #  r'A:\fotos\3',
 ]
 
 output = 'movie.gif'
@@ -37,5 +37,6 @@ for path in paths:
 
     print('writing gif...')
     imageio.mimsave(file_write, images, duration=duration)
+    print(file_write)
 
 print('DONE')
